@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Antal Sebastian · Finisaje și renovări</title>
+<meta name="description" content="Portofoliul lui Antal Sebastian: băi complete, gresie și faianță cu model, șeminee, terase, scări și lucrări exterioare.">
+<meta property="og:title" content="Antal Sebastian · Finisaje și renovări">
+<meta property="og:description" content="Băi complete, gresie și faianță cu model, șeminee, terase și scări. Lucrări reale, înainte și după.">
+<meta property="og:image" content="media/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f1ec; --bg2:#ebe6de; --ink:#1d1b19; --muted:#6b645c; --line:#d8d1c6;
+  --accent:#b5562f; --accent-ink:#fff; --card:#fbfaf7;
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+@media(max-width:600px){.wrap{padding:0 16px}}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+nav .brand{font-family:var(--serif);font-size:20px;font-weight:600;text-decoration:none;color:#fff;transition:color .3s}
+nav ul{display:flex;gap:28px;list-style:none}
+nav ul a{text-decoration:none;color:rgba(255,255,255,.9);font-size:14px;font-weight:500;transition:color .3s}
+nav.solid{background:rgba(244,241,236,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+nav.solid .brand,nav.solid ul a{color:var(--ink)}
+@media(max-width:700px){nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.1) 35%,rgba(0,0,0,.75) 100%)}
+.hero .wrap{position:relative;z-index:1;padding-bottom:72px;width:100%}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;opacity:.9}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(48px,9vw,112px);line-height:.98;margin:14px 0 20px;letter-spacing:-.02em}
+.hero p{max-width:560px;font-size:18px;opacity:.92}
+.btns{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{border-color:rgba(255,255,255,.6);color:#fff}
+
+/* sections */
+section{padding:96px 0}
+@media(max-width:600px){section{padding:64px 0}}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.01em}
+.head p{max-width:440px;color:var(--muted)}
+.kicker{color:var(--accent);font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:12px}
+
+/* services */
+.services{background:var(--ink);color:#f4f1ec}
+.services .head p{color:#b9b1a6}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #3a3632}
+.svc div{padding:26px 22px 28px 0;border-bottom:1px solid #3a3632}
+.svc b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;margin-bottom:6px}
+.svc span{color:#b9b1a6;font-size:14px}
+.svc i{font-style:normal;color:var(--accent);font-size:13px;font-weight:600;display:block;margin-bottom:14px}
+@media(max-width:900px){.svc{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.svc{grid-template-columns:1fr}}
+
+/* before / after */
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:1000px){.ba-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.ba-grid{grid-template-columns:1fr}}
+.ba{position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;user-select:none;touch-action:pan-y;cursor:ew-resize;background:var(--bg2)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.ba .before{clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.ba .bar{position:absolute;top:0;bottom:0;left:var(--p,50%);width:2px;background:#fff;transform:translateX(-1px);box-shadow:0 0 12px rgba(0,0,0,.35)}
+.ba .knob{position:absolute;top:50%;left:50%;width:44px;height:44px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);display:grid;place-items:center;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.ba .knob svg{width:22px;height:22px;stroke:var(--ink)}
+.ba .tag{position:absolute;top:14px;padding:5px 11px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.04em;background:rgba(20,18,16,.72);color:#fff;backdrop-filter:blur(6px)}
+.ba .tag.l{left:14px}.ba .tag.r{right:14px;background:var(--accent)}
+.ba-cap{margin-top:12px;font-family:var(--serif);font-size:20px}
+.ba-cap small{display:block;font-family:var(--sans);font-size:14px;color:var(--muted)}
+.steps-wrap{margin-top:56px;display:grid;gap:40px}
+.steps h3{font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:14px}
+.steps .row{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:12px}
+@media(max-width:700px){.steps .row{grid-template-columns:repeat(2,1fr)}}
+.steps figure{position:relative;border-radius:12px;overflow:hidden;cursor:zoom-in}
+.steps figure img{aspect-ratio:3/4;width:100%;object-fit:cover;transition:transform .5s}
+.steps figure:hover img{transform:scale(1.03)}
+.steps figcaption{position:absolute;left:10px;bottom:10px;background:rgba(20,18,16,.72);color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.steps figure:last-child figcaption{background:var(--accent)}
+
+/* work */
+.work{background:var(--bg2)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px}
+.filters button{font:inherit;font-size:14px;font-weight:500;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.filters button span{opacity:.55;margin-left:4px}
+.project{margin-bottom:64px}
+.project[hidden]{display:none}
+.project header{display:flex;align-items:baseline;gap:14px;margin-bottom:16px;flex-wrap:wrap}
+.project h3{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.2}
+@media(max-width:600px){.masonry{columns:2;column-gap:8px}.tile{margin-bottom:8px;border-radius:8px}.project h3{font-size:24px}}
+.project header span{color:var(--muted);font-size:14px}
+.masonry{columns:4 240px;column-gap:12px}
+.tile{break-inside:avoid;margin-bottom:12px;position:relative;border-radius:10px;overflow:hidden;cursor:zoom-in;background:#d9d2c7}
+.tile img,.tile video{width:100%;height:auto;transition:transform .6s}
+.tile:hover img,.tile:hover video{transform:scale(1.03)}
+.tile .play{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;background:rgba(20,18,16,.6);display:grid;place-items:center}
+.tile .play svg{width:12px;height:12px;fill:#fff;margin-left:2px}
+
+/* contact */
+.contact{background:var(--ink);color:#f4f1ec;text-align:center}
+.contact h2{margin:0 auto 18px;max-width:760px}
+.contact p{color:#b9b1a6;max-width:520px;margin:0 auto}
+.contact .btns{justify-content:center}
+.contact .btn.ghost{border-color:#5a544d}
+footer{background:var(--ink);color:#7d756c;font-size:13px;padding:0 0 32px;text-align:center}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(12,11,10,.96);display:none;align-items:center;justify-content:center}
+.lb.open{display:flex}
+.lb .stage{max-width:92vw;max-height:84vh;display:flex;align-items:center;justify-content:center}
+.lb .stage img,.lb .stage video{max-width:92vw;max-height:84vh;width:auto;height:auto;border-radius:6px}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;width:48px;height:48px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb button svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2}
+.lb .x{top:18px;right:18px}.lb .prev{left:18px;top:50%;transform:translateY(-50%)}.lb .next{right:18px;top:50%;transform:translateY(-50%)}
+.lb .cap{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#d8d1c6;font-size:14px}
+@media(max-width:600px){.lb .prev,.lb .next{top:auto;bottom:56px;transform:none}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="wrap">
+  <a class="brand" href="#top">Antal Sebastian</a>
+  <ul><li><a href="#inainte-dupa">Înainte și după</a></li><li><a href="#lucrari">Lucrări</a></li><li><a href="#servicii">Ce face</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top">
+  <img src="media/hero.jpg" alt="Baie finisată cu cadă liberă și lumină ascunsă în perete">
+  <div class="wrap">
+    <div class="eyebrow">Finisaje și renovări</div>
+    <h1>Antal<br>Sebastian</h1>
+    <p>Băi la cheie, gresie și faianță cu model, șeminee, terase și scări. Tot ce vezi pe pagina asta e lucrat de mâna lui, de la șapă până la ultimul rost.</p>
+    <div class="btns"><a class="btn primary" href="#inainte-dupa">Vezi înainte și după</a><a class="btn ghost" href="#lucrari">Toate lucrările</a></div>
+  </div>
+</header>
+
+<section id="inainte-dupa"><div class="wrap">
+  <div class="head reveal"><div><div class="kicker">Înainte și după</div><h2>Trage de bară.</h2></div>
+  <p>Aceleași locuri, fotografiate din același unghi, înainte să intre el și după ce a plecat.</p></div>
+  <div class="ba-grid"><div class="ba-item"><div class="ba"><img src="media/ba/intrare-2.jpg" alt="Intrare cu mozaic geometric, după" loading="lazy"><img class="before" src="media/ba/intrare-1.jpg" alt="Intrare cu mozaic geometric, înainte" loading="lazy"><span class="tag l">Înainte</span><span class="tag r">După</span><div class="bar"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div></div></div><div class="ba-cap">Intrare cu mozaic geometric<small>Șapa goală, apoi model alb-negru cu bordură</small></div></div><div class="ba-item"><div class="ba"><img src="media/ba/seminee-2.jpg" alt="Șemineu din piatră, după" loading="lazy"><img class="before" src="media/ba/seminee-1.jpg" alt="Șemineu din piatră, înainte" loading="lazy"><span class="tag l">Înainte</span><span class="tag r">După</span><div class="bar"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div></div></div><div class="ba-cap">Șemineu din piatră<small>Focar deschis, refăcut cu cărămidă albă și grătar</small></div></div><div class="ba-item"><div class="ba"><img src="media/ba/hol-2.jpg" alt="Hol victorian în carouri, după" loading="lazy"><img class="before" src="media/ba/hol-1.jpg" alt="Hol victorian în carouri, înainte" loading="lazy"><span class="tag l">Înainte</span><span class="tag r">După</span><div class="bar"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div></div></div><div class="ba-cap">Hol victorian în carouri<small>Pe membrană, apoi carouri pe diagonală cu bordură</small></div></div><div class="ba-item"><div class="ba"><img src="media/ba/scari-2.jpg" alt="Scările de la intrare, după" loading="lazy"><img class="before" src="media/ba/scari-1.jpg" alt="Scările de la intrare, înainte" loading="lazy"><span class="tag l">Înainte</span><span class="tag r">După</span><div class="bar"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div></div></div><div class="ba-cap">Scările de la intrare<small>Teracota veche, înlocuită cu trepte noi</small></div></div><div class="ba-item"><div class="ba"><img src="media/ba/terasa-2.jpg" alt="Scări de terasă, după" loading="lazy"><img class="before" src="media/ba/terasa-1.jpg" alt="Scări de terasă, înainte" loading="lazy"><span class="tag l">Înainte</span><span class="tag r">După</span><div class="bar"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div></div></div><div class="ba-cap">Scări de terasă<small>Din pământ și armătură, până la trepte placate</small></div></div></div>
+  <div class="steps-wrap"><div class="steps"><h3>Baie construită de la zero</h3><div class="row" style="--n:4"><figure data-type="i" data-src="media/ba/baie-1.jpg" data-cap="Baie construită de la zero: Cadru de lemn"><img src="media/ba/baie-1.jpg" loading="lazy" alt="Baie construită de la zero: Cadru de lemn"><figcaption>1. Cadru de lemn</figcaption></figure><figure data-type="i" data-src="media/ba/baie-2.jpg" data-cap="Baie construită de la zero: Hidroizolație"><img src="media/ba/baie-2.jpg" loading="lazy" alt="Baie construită de la zero: Hidroizolație"><figcaption>2. Hidroizolație</figcaption></figure><figure data-type="i" data-src="media/ba/baie-3.jpg" data-cap="Baie construită de la zero: Faianță și gresie"><img src="media/ba/baie-3.jpg" loading="lazy" alt="Baie construită de la zero: Faianță și gresie"><figcaption>3. Faianță și gresie</figcaption></figure><figure data-type="i" data-src="media/ba/baie-4.jpg" data-cap="Baie construită de la zero: Gata"><img src="media/ba/baie-4.jpg" loading="lazy" alt="Baie construită de la zero: Gata"><figcaption>4. Gata</figcaption></figure></div></div><div class="steps"><h3>Baie cu cadă liberă</h3><div class="row" style="--n:3"><figure data-type="i" data-src="media/ba/cada-1.jpg" data-cap="Baie cu cadă liberă: Montaj"><img src="media/ba/cada-1.jpg" loading="lazy" alt="Baie cu cadă liberă: Montaj"><figcaption>1. Montaj</figcaption></figure><figure data-type="i" data-src="media/ba/cada-2.jpg" data-cap="Baie cu cadă liberă: Placare marmură"><img src="media/ba/cada-2.jpg" loading="lazy" alt="Baie cu cadă liberă: Placare marmură"><figcaption>2. Placare marmură</figcaption></figure><figure data-type="i" data-src="media/ba/cada-3.jpg" data-cap="Baie cu cadă liberă: Gata"><img src="media/ba/cada-3.jpg" loading="lazy" alt="Baie cu cadă liberă: Gata"><figcaption>3. Gata</figcaption></figure></div></div></div>
+</div></section>
+
+<section class="work" id="lucrari"><div class="wrap">
+  <div class="head reveal"><div><div class="kicker">Lucrări</div><h2>Din șantier,<br>așa cum au ieșit.</h2></div>
+  <p>Fotografii și clipuri filmate direct pe lucrare. Apasă pe oricare ca să o vezi mare.</p></div>
+  <div class="filters" role="group" aria-label="Filtrează lucrările"><button data-cat="all" aria-pressed="true">Toate<span>88</span></button><button data-cat="bai" aria-pressed="false">Băi<span>44</span></button><button data-cat="pardoseli" aria-pressed="false">Pardoseli și holuri<span>16</span></button><button data-cat="seminee" aria-pressed="false">Șeminee<span>7</span></button><button data-cat="exterior" aria-pressed="false">Exterior<span>21</span></button></div>
+  <div id="projects"><article class="project" data-cat="bai"><header><h3>Baie cu cadă liberă și marmură</h3><span>7 fotografii · 2 clipuri</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/bai-01.jpg" data-cap="Baie cu cadă liberă și marmură"><img src="media/bai-01-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu cadă liberă și marmură"></figure><figure class="tile" data-type="i" data-src="media/bai-02.jpg" data-cap="Baie cu cadă liberă și marmură"><img src="media/bai-02-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu cadă liberă și marmură"></figure><figure class="tile" data-type="i" data-src="media/bai-03.jpg" data-cap="Baie cu cadă liberă și marmură"><img src="media/bai-03-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu cadă liberă și marmură"></figure><figure class="tile" data-type="i" data-src="media/bai-04.jpg" data-cap="Baie cu cadă liberă și marmură"><img src="media/bai-04-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu cadă liberă și marmură"></figure><figure class="tile" data-type="i" data-src="media/bai-05.jpg" data-cap="Baie cu cadă liberă și marmură"><img src="media/bai-05-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu cadă liberă și marmură"></figure><figure class="tile" data-type="i" data-src="media/bai-06.jpg" data-cap="Baie cu cadă liberă și marmură"><img src="media/bai-06-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu cadă liberă și marmură"></figure><figure class="tile" data-type="i" data-src="media/bai-07.jpg" data-cap="Baie cu cadă liberă și marmură"><img src="media/bai-07-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu cadă liberă și marmură"></figure><figure class="tile" data-type="v" data-src="media/bai-08.mp4" data-cap="Baie cu cadă liberă și marmură"><video src="media/bai-08.mp4" poster="media/bai-08-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-09.mp4" data-cap="Baie cu cadă liberă și marmură"><video src="media/bai-09.mp4" poster="media/bai-09-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="bai"><header><h3>Baie construită de la zero</h3><span>10 fotografii · 4 clipuri</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/bai-10.jpg" data-cap="Baie construită de la zero"><img src="media/bai-10-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-11.jpg" data-cap="Baie construită de la zero"><img src="media/bai-11-s.jpg" width="1600" height="1200" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-12.jpg" data-cap="Baie construită de la zero"><img src="media/bai-12-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-13.jpg" data-cap="Baie construită de la zero"><img src="media/bai-13-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-14.jpg" data-cap="Baie construită de la zero"><img src="media/bai-14-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-15.jpg" data-cap="Baie construită de la zero"><img src="media/bai-15-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-16.jpg" data-cap="Baie construită de la zero"><img src="media/bai-16-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-17.jpg" data-cap="Baie construită de la zero"><img src="media/bai-17-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-18.jpg" data-cap="Baie construită de la zero"><img src="media/bai-18-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="i" data-src="media/bai-19.jpg" data-cap="Baie construită de la zero"><img src="media/bai-19-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie construită de la zero"></figure><figure class="tile" data-type="v" data-src="media/bai-20.mp4" data-cap="Baie construită de la zero"><video src="media/bai-20.mp4" poster="media/bai-20-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-21.mp4" data-cap="Baie construită de la zero"><video src="media/bai-21.mp4" poster="media/bai-21-p.jpg" width="332" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-22.mp4" data-cap="Baie construită de la zero"><video src="media/bai-22.mp4" poster="media/bai-22-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-23.mp4" data-cap="Baie construită de la zero"><video src="media/bai-23.mp4" poster="media/bai-23-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="bai"><header><h3>Baie cu lumină ascunsă</h3><span>1 fotografie · 1 clip</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/bai-24.jpg" data-cap="Baie cu lumină ascunsă"><img src="media/bai-24-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie cu lumină ascunsă"></figure><figure class="tile" data-type="v" data-src="media/bai-25.mp4" data-cap="Baie cu lumină ascunsă"><video src="media/bai-25.mp4" poster="media/bai-25-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="bai"><header><h3>Baie în tonuri calde, duș walk-in</h3><span>5 fotografii</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/bai-26.jpg" data-cap="Baie în tonuri calde, duș walk-in"><img src="media/bai-26-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie în tonuri calde, duș walk-in"></figure><figure class="tile" data-type="i" data-src="media/bai-27.jpg" data-cap="Baie în tonuri calde, duș walk-in"><img src="media/bai-27-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie în tonuri calde, duș walk-in"></figure><figure class="tile" data-type="i" data-src="media/bai-28.jpg" data-cap="Baie în tonuri calde, duș walk-in"><img src="media/bai-28-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie în tonuri calde, duș walk-in"></figure><figure class="tile" data-type="i" data-src="media/bai-29.jpg" data-cap="Baie în tonuri calde, duș walk-in"><img src="media/bai-29-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie în tonuri calde, duș walk-in"></figure><figure class="tile" data-type="i" data-src="media/bai-30.jpg" data-cap="Baie în tonuri calde, duș walk-in"><img src="media/bai-30-s.jpg" width="1200" height="1600" loading="lazy" alt="Baie în tonuri calde, duș walk-in"></figure></div></article>
+<article class="project" data-cat="bai"><header><h3>Baie cu hexagoane</h3><span>2 fotografii · 2 clipuri</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/bai-31.jpg" data-cap="Baie cu hexagoane"><img src="media/bai-31-s.jpg" width="900" height="1600" loading="lazy" alt="Baie cu hexagoane"></figure><figure class="tile" data-type="i" data-src="media/bai-32.jpg" data-cap="Baie cu hexagoane"><img src="media/bai-32-s.jpg" width="900" height="1600" loading="lazy" alt="Baie cu hexagoane"></figure><figure class="tile" data-type="v" data-src="media/bai-33.mp4" data-cap="Baie cu hexagoane"><video src="media/bai-33.mp4" poster="media/bai-33-p.jpg" width="402" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-34.mp4" data-cap="Baie cu hexagoane"><video src="media/bai-34.mp4" poster="media/bai-34-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="bai"><header><h3>Duș cu perete de sticlă</h3><span>3 fotografii · 4 clipuri</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/bai-35.jpg" data-cap="Duș cu perete de sticlă"><img src="media/bai-35-s.jpg" width="1200" height="1600" loading="lazy" alt="Duș cu perete de sticlă"></figure><figure class="tile" data-type="i" data-src="media/bai-36.jpg" data-cap="Duș cu perete de sticlă"><img src="media/bai-36-s.jpg" width="1200" height="1600" loading="lazy" alt="Duș cu perete de sticlă"></figure><figure class="tile" data-type="i" data-src="media/bai-37.jpg" data-cap="Duș cu perete de sticlă"><img src="media/bai-37-s.jpg" width="1200" height="1600" loading="lazy" alt="Duș cu perete de sticlă"></figure><figure class="tile" data-type="v" data-src="media/bai-38.mp4" data-cap="Duș cu perete de sticlă"><video src="media/bai-38.mp4" poster="media/bai-38-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-39.mp4" data-cap="Duș cu perete de sticlă"><video src="media/bai-39.mp4" poster="media/bai-39-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-40.mp4" data-cap="Duș cu perete de sticlă"><video src="media/bai-40.mp4" poster="media/bai-40-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-41.mp4" data-cap="Duș cu perete de sticlă"><video src="media/bai-41.mp4" poster="media/bai-41-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="bai"><header><h3>Baie cu tapet și gresie cu model</h3><span>2 clipuri</span></header><div class="masonry"><figure class="tile" data-type="v" data-src="media/bai-42.mp4" data-cap="Baie cu tapet și gresie cu model"><video src="media/bai-42.mp4" poster="media/bai-42-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/bai-43.mp4" data-cap="Baie cu tapet și gresie cu model"><video src="media/bai-43.mp4" poster="media/bai-43-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="bai"><header><h3>Placare cu marmură verde</h3><span>1 fotografie</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/bai-44.jpg" data-cap="Placare cu marmură verde"><img src="media/bai-44-s.jpg" width="900" height="1600" loading="lazy" alt="Placare cu marmură verde"></figure></div></article>
+<article class="project" data-cat="pardoseli"><header><h3>Hol victorian în carouri</h3><span>4 fotografii · 1 clip</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/pardoseli-45.jpg" data-cap="Hol victorian în carouri"><img src="media/pardoseli-45-s.jpg" width="1200" height="1600" loading="lazy" alt="Hol victorian în carouri"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-46.jpg" data-cap="Hol victorian în carouri"><img src="media/pardoseli-46-s.jpg" width="1200" height="1600" loading="lazy" alt="Hol victorian în carouri"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-47.jpg" data-cap="Hol victorian în carouri"><img src="media/pardoseli-47-s.jpg" width="1200" height="1600" loading="lazy" alt="Hol victorian în carouri"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-48.jpg" data-cap="Hol victorian în carouri"><img src="media/pardoseli-48-s.jpg" width="1200" height="1600" loading="lazy" alt="Hol victorian în carouri"></figure><figure class="tile" data-type="v" data-src="media/pardoseli-49.mp4" data-cap="Hol victorian în carouri"><video src="media/pardoseli-49.mp4" poster="media/pardoseli-49-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="pardoseli"><header><h3>Intrare cu mozaic geometric</h3><span>4 fotografii · 1 clip</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/pardoseli-50.jpg" data-cap="Intrare cu mozaic geometric"><img src="media/pardoseli-50-s.jpg" width="1200" height="1600" loading="lazy" alt="Intrare cu mozaic geometric"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-51.jpg" data-cap="Intrare cu mozaic geometric"><img src="media/pardoseli-51-s.jpg" width="1200" height="1600" loading="lazy" alt="Intrare cu mozaic geometric"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-52.jpg" data-cap="Intrare cu mozaic geometric"><img src="media/pardoseli-52-s.jpg" width="1200" height="1600" loading="lazy" alt="Intrare cu mozaic geometric"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-53.jpg" data-cap="Intrare cu mozaic geometric"><img src="media/pardoseli-53-s.jpg" width="1200" height="1600" loading="lazy" alt="Intrare cu mozaic geometric"></figure><figure class="tile" data-type="v" data-src="media/pardoseli-54.mp4" data-cap="Intrare cu mozaic geometric"><video src="media/pardoseli-54.mp4" poster="media/pardoseli-54-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="pardoseli"><header><h3>Pardoseală din teracotă</h3><span>4 fotografii</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/pardoseli-55.jpg" data-cap="Pardoseală din teracotă"><img src="media/pardoseli-55-s.jpg" width="1200" height="1600" loading="lazy" alt="Pardoseală din teracotă"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-56.jpg" data-cap="Pardoseală din teracotă"><img src="media/pardoseli-56-s.jpg" width="1200" height="1600" loading="lazy" alt="Pardoseală din teracotă"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-57.jpg" data-cap="Pardoseală din teracotă"><img src="media/pardoseli-57-s.jpg" width="1200" height="1600" loading="lazy" alt="Pardoseală din teracotă"></figure><figure class="tile" data-type="i" data-src="media/pardoseli-58.jpg" data-cap="Pardoseală din teracotă"><img src="media/pardoseli-58-s.jpg" width="1200" height="1600" loading="lazy" alt="Pardoseală din teracotă"></figure></div></article>
+<article class="project" data-cat="pardoseli"><header><h3>Interioare finisate</h3><span>2 clipuri</span></header><div class="masonry"><figure class="tile" data-type="v" data-src="media/pardoseli-59.mp4" data-cap="Interioare finisate"><video src="media/pardoseli-59.mp4" poster="media/pardoseli-59-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/pardoseli-60.mp4" data-cap="Interioare finisate"><video src="media/pardoseli-60.mp4" poster="media/pardoseli-60-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="seminee"><header><h3>Șemineu din piatră, refăcut</h3><span>5 fotografii · 1 clip</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/seminee-61.jpg" data-cap="Șemineu din piatră, refăcut"><img src="media/seminee-61-s.jpg" width="1200" height="1600" loading="lazy" alt="Șemineu din piatră, refăcut"></figure><figure class="tile" data-type="i" data-src="media/seminee-62.jpg" data-cap="Șemineu din piatră, refăcut"><img src="media/seminee-62-s.jpg" width="1200" height="1600" loading="lazy" alt="Șemineu din piatră, refăcut"></figure><figure class="tile" data-type="i" data-src="media/seminee-63.jpg" data-cap="Șemineu din piatră, refăcut"><img src="media/seminee-63-s.jpg" width="1200" height="1600" loading="lazy" alt="Șemineu din piatră, refăcut"></figure><figure class="tile" data-type="i" data-src="media/seminee-64.jpg" data-cap="Șemineu din piatră, refăcut"><img src="media/seminee-64-s.jpg" width="1200" height="1600" loading="lazy" alt="Șemineu din piatră, refăcut"></figure><figure class="tile" data-type="i" data-src="media/seminee-65.jpg" data-cap="Șemineu din piatră, refăcut"><img src="media/seminee-65-s.jpg" width="1200" height="1600" loading="lazy" alt="Șemineu din piatră, refăcut"></figure><figure class="tile" data-type="v" data-src="media/seminee-66.mp4" data-cap="Șemineu din piatră, refăcut"><video src="media/seminee-66.mp4" poster="media/seminee-66-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="seminee"><header><h3>Sobă pe vatră de granit</h3><span>1 fotografie</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/seminee-67.jpg" data-cap="Sobă pe vatră de granit"><img src="media/seminee-67-s.jpg" width="900" height="1600" loading="lazy" alt="Sobă pe vatră de granit"></figure></div></article>
+<article class="project" data-cat="exterior"><header><h3>Terasă și scări exterioare</h3><span>6 fotografii · 4 clipuri</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/exterior-68.jpg" data-cap="Terasă și scări exterioare"><img src="media/exterior-68-s.jpg" width="1200" height="1600" loading="lazy" alt="Terasă și scări exterioare"></figure><figure class="tile" data-type="i" data-src="media/exterior-69.jpg" data-cap="Terasă și scări exterioare"><img src="media/exterior-69-s.jpg" width="1200" height="1600" loading="lazy" alt="Terasă și scări exterioare"></figure><figure class="tile" data-type="i" data-src="media/exterior-70.jpg" data-cap="Terasă și scări exterioare"><img src="media/exterior-70-s.jpg" width="1200" height="1600" loading="lazy" alt="Terasă și scări exterioare"></figure><figure class="tile" data-type="i" data-src="media/exterior-71.jpg" data-cap="Terasă și scări exterioare"><img src="media/exterior-71-s.jpg" width="1200" height="1600" loading="lazy" alt="Terasă și scări exterioare"></figure><figure class="tile" data-type="i" data-src="media/exterior-72.jpg" data-cap="Terasă și scări exterioare"><img src="media/exterior-72-s.jpg" width="900" height="1600" loading="lazy" alt="Terasă și scări exterioare"></figure><figure class="tile" data-type="i" data-src="media/exterior-73.jpg" data-cap="Terasă și scări exterioare"><img src="media/exterior-73-s.jpg" width="1200" height="1600" loading="lazy" alt="Terasă și scări exterioare"></figure><figure class="tile" data-type="v" data-src="media/exterior-74.mp4" data-cap="Terasă și scări exterioare"><video src="media/exterior-74.mp4" poster="media/exterior-74-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-75.mp4" data-cap="Terasă și scări exterioare"><video src="media/exterior-75.mp4" poster="media/exterior-75-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-76.mp4" data-cap="Terasă și scări exterioare"><video src="media/exterior-76.mp4" poster="media/exterior-76-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-77.mp4" data-cap="Terasă și scări exterioare"><video src="media/exterior-77.mp4" poster="media/exterior-77-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="exterior"><header><h3>Grătar din cărămidă</h3><span>1 fotografie · 3 clipuri</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/exterior-78.jpg" data-cap="Grătar din cărămidă"><img src="media/exterior-78-s.jpg" width="1200" height="1600" loading="lazy" alt="Grătar din cărămidă"></figure><figure class="tile" data-type="v" data-src="media/exterior-79.mp4" data-cap="Grătar din cărămidă"><video src="media/exterior-79.mp4" poster="media/exterior-79-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-80.mp4" data-cap="Grătar din cărămidă"><video src="media/exterior-80.mp4" poster="media/exterior-80-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-81.mp4" data-cap="Grătar din cărămidă"><video src="media/exterior-81.mp4" poster="media/exterior-81-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="exterior"><header><h3>Casă: termoizolație și fațadă</h3><span>2 fotografii · 2 clipuri</span></header><div class="masonry"><figure class="tile" data-type="i" data-src="media/exterior-82.jpg" data-cap="Casă: termoizolație și fațadă"><img src="media/exterior-82-s.jpg" width="1200" height="1600" loading="lazy" alt="Casă: termoizolație și fațadă"></figure><figure class="tile" data-type="i" data-src="media/exterior-83.jpg" data-cap="Casă: termoizolație și fațadă"><img src="media/exterior-83-s.jpg" width="1200" height="1600" loading="lazy" alt="Casă: termoizolație și fațadă"></figure><figure class="tile" data-type="v" data-src="media/exterior-84.mp4" data-cap="Casă: termoizolație și fațadă"><video src="media/exterior-84.mp4" poster="media/exterior-84-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-85.mp4" data-cap="Casă: termoizolație și fațadă"><video src="media/exterior-85.mp4" poster="media/exterior-85-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article>
+<article class="project" data-cat="exterior"><header><h3>Margine de piscină</h3><span>3 clipuri</span></header><div class="masonry"><figure class="tile" data-type="v" data-src="media/exterior-86.mp4" data-cap="Margine de piscină"><video src="media/exterior-86.mp4" poster="media/exterior-86-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-87.mp4" data-cap="Margine de piscină"><video src="media/exterior-87.mp4" poster="media/exterior-87-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure><figure class="tile" data-type="v" data-src="media/exterior-88.mp4" data-cap="Margine de piscină"><video src="media/exterior-88.mp4" poster="media/exterior-88-p.jpg" width="406" height="720" muted loop playsinline preload="none"></video><span class="play"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span></figure></div></article></div>
+</div></section>
+
+<section class="services" id="servicii"><div class="wrap">
+  <div class="head reveal"><div><div class="kicker">Ce face</div><h2>De la cadru de lemn<br>la ultimul rost.</h2></div>
+  <p>O baie nu începe cu faianța. Începe cu instalația, hidroizolația și un perete drept. Sebastian face toate etapele, cap-coadă.</p></div>
+  <div class="svc reveal">
+    <div><i>01</i><b>Băi complete</b><span>Instalații ascunse, cadre de susținere, hidroizolație, cadă liberă, duș walk-in.</span></div>
+    <div><i>02</i><b>Gresie și faianță</b><span>Carouri, hexagoane, mozaic geometric, marmură, teracotă. Rosturi drepte la milimetru.</span></div>
+    <div><i>03</i><b>Încălzire în pardoseală</b><span>Membrane și cabluri sub gresie, pentru o baie caldă la picior.</span></div>
+    <div><i>04</i><b>Șeminee și sobe</b><span>Refacere de șeminee din piatră, focar placat cu cărămidă albă, vetre de granit.</span></div>
+    <div><i>05</i><b>Terase și scări</b><span>Cofraje, armături, turnare de beton și placare pe trepte exterioare.</span></div>
+    <div><i>06</i><b>Grătare din cărămidă</b><span>Grătar și cuptor de grădină, zidit de la fundație până la coș.</span></div>
+    <div><i>07</i><b>Fațade și trotuare</b><span>Termoizolație, tencuială, trotuar de beton în jurul casei.</span></div>
+    <div><i>08</i><b>Margini de piscină</b><span>Plăci de bordură și pardoseală exterioară în jurul piscinei.</span></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap reveal">
+  <div class="kicker">Contact</div>
+  <h2>Ai o baie, un hol sau o terasă de făcut?</h2>
+  <p>Sună-l și spune-i ce ai de făcut. Îți spune sincer ce se poate face.</p>
+  <div class="btns"><a class="btn primary" href="tel:+40724522856">Sună: +40 724 522 856</a></div>
+</div></section>
+<footer>© Antal Sebastian · Finisaje și renovări</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Vizualizare mare">
+  <div class="stage" id="stage"></div>
+  <button class="x" aria-label="Închide"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="prev" aria-label="Înapoi"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="next" aria-label="Înainte"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div class="cap" id="cap"></div>
+</div>
+
+<script>
+// nav
+const nav=document.getElementById('nav');
+const onScroll=()=>nav.classList.toggle('solid',scrollY>innerHeight*.6);
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+// reveal
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal,.ba-item,.steps').forEach(el=>{el.classList.add('reveal');ro.observe(el)});
+
+// before/after sliders
+document.querySelectorAll('.ba').forEach(ba=>{
+  const set=x=>{const r=ba.getBoundingClientRect();let p=Math.max(0,Math.min(100,(x-r.left)/r.width*100));ba.style.setProperty('--p',p+'%')};
+  let down=false;
+  ba.addEventListener('pointerdown',e=>{down=true;ba.setPointerCapture(e.pointerId);set(e.clientX)});
+  ba.addEventListener('pointermove',e=>{if(down)set(e.clientX)});
+  ba.addEventListener('pointerup',()=>down=false);ba.addEventListener('pointercancel',()=>down=false);
+  ba.tabIndex=0;ba.setAttribute('role','slider');ba.setAttribute('aria-label','Glisor înainte și după');
+  ba.addEventListener('keydown',e=>{const c=parseFloat(getComputedStyle(ba).getPropertyValue('--p'))||50;if(e.key==='ArrowLeft')ba.style.setProperty('--p',Math.max(0,c-5)+'%');if(e.key==='ArrowRight')ba.style.setProperty('--p',Math.min(100,c+5)+'%')});
+});
+
+// videos: play muted only while visible
+const tryPlay=v=>{v.muted=true;const p=v.play();if(p)p.catch(()=>v.addEventListener('canplay',()=>{if(v._vis)v.play().catch(()=>{})},{once:true}))};
+const vo=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;v._vis=e.isIntersecting;if(e.isIntersecting){v.preload='auto';tryPlay(v)}else v.pause()}),{threshold:.25});
+document.querySelectorAll('.tile video').forEach(v=>{v.muted=true;vo.observe(v)});
+
+// filters
+const btns=[...document.querySelectorAll('.filters button')];
+btns.forEach(b=>b.addEventListener('click',()=>{
+  btns.forEach(x=>x.setAttribute('aria-pressed',x===b));
+  const c=b.dataset.cat;
+  document.querySelectorAll('.project').forEach(p=>p.hidden=!(c==='all'||p.dataset.cat===c));
+}));
+
+// lightbox
+const lb=document.getElementById('lb'),stage=document.getElementById('stage'),cap=document.getElementById('cap');
+let list=[],idx=0;
+function show(){
+  const t=list[idx];stage.innerHTML='';
+  if(t.dataset.type==='v'){const v=document.createElement('video');v.src=t.dataset.src;v.muted=true;v.autoplay=true;v.loop=true;v.playsInline=true;v.setAttribute('playsinline','');stage.appendChild(v)}
+  else{const i=document.createElement('img');i.src=t.dataset.src;i.alt=t.dataset.cap;stage.appendChild(i)}
+  cap.textContent=t.dataset.cap+'  ·  '+(idx+1)+' / '+list.length;
+}
+function open(t){list=[...document.querySelectorAll('[data-src]')].filter(x=>!x.closest('[hidden]'));idx=list.indexOf(t);show();lb.classList.add('open');document.body.style.overflow='hidden'}
+function close(){lb.classList.remove('open');stage.innerHTML='';document.body.style.overflow=''}
+const go=d=>{idx=(idx+d+list.length)%list.length;show()};
+document.addEventListener('click',e=>{const t=e.target.closest('[data-src]');if(t)open(t)});
+lb.querySelector('.x').onclick=close;lb.querySelector('.prev').onclick=()=>go(-1);lb.querySelector('.next').onclick=()=>go(1);
+lb.addEventListener('click',e=>{if(e.target===lb||e.target===stage)close()});
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1)});
+let sx=null;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+lb.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)go(dx<0?1:-1);sx=null});
+</script>
+</body>
+</html>
